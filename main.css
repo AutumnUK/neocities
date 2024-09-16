@@ -1,46 +1,48 @@
 @font-face {
     font-family: 'daydreamthin';
-    src: url('res/daydream-webfont.woff2') format('woff2'),
-         url('res/daydream-webfont.woff')  format('woff');
+    src: url('fonts/daydream-webfont.woff2') format('woff2'),
+         url('fonts/daydream-webfont.woff')  format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 #header, #content, #sidebar, #footer {
     box-shadow: 10px 10px rgb(50, 33, 55); 
-    background-color: rgb(109, 146, 150);
+    background-color: rgb(65, 49, 66);
 }
 
 H1 {
     font-family: 'daydreamthin';
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #header{
-    background-color: rgb(109, 146, 150);
+    background-color: rgb(65, 49, 66);
     margin:auto;
     margin-top: 40px;
+    padding-top:6px;
+    padding-bottom: 6px;
     width: 640px;
     box-shadow: 10px 10px rgb(50, 33, 55);
 }
 
 #core {
     width: 640px;
+    height: 340px;
     margin: auto;
     display: flex;
     margin-top: 40px;
+    
 }
 
 #content{
-    background-color: rgb(109, 146, 150);
+    background-color: rgb(65, 49, 66);
     width: 480px;
-    height: 400px;
 }
 
 #sidebar {
-    width: 140px;
-    height: 400px;
-    margin-right: 20px;
+    width: 110px;
+    margin-right: 50px;
 }
 
 #footer {
@@ -52,7 +54,8 @@ H1 {
 ul {
     list-style: none;
     margin: auto;
-    padding-left: 0px;   
+    padding-left: 30px;   
+    text-align: justify;
 }
 
 p                   { padding: 10px; }
@@ -64,6 +67,10 @@ body{
     text-align: center;
     color: white;
     width: 98%;
+    height: 100%;
     background-color: #74726d;
     margin: auto;
+    background-image: url(images/tr1.png);
+    
+    
 }
