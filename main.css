@@ -1,0 +1,65 @@
+#Header{
+    background-color: rgb(109, 146, 150);
+    margin:auto;
+    width: 620px;
+    height: 130px;
+
+    box-shadow: 40px 40px rgb(126, 74, 141);
+
+}
+
+#Core{
+    background-color: rgb(109, 146, 150);
+    
+    width: 620px;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 40px 40px rgb(126, 74, 141);
+    
+}
+
+#List {
+    
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    padding: 10px;
+}
+
+ul {
+    padding-left: 0px;
+    display: flex;
+    list-style: none;
+
+}
+
+li {
+    margin: 0 50px;
+}
+
+#puzzle{
+    display: block;
+    margin: auto;
+    margin-top: 40px
+
+}
+
+#background{
+    width: 98%;
+    text-align: center;
+    color: white;
+    
+}
+
+body{
+    width: 98%;
+    background-color: #d8cfb4;
+    background-image: url("tr1.png");
+    margin: auto;
+}
