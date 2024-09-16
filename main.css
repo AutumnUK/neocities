@@ -1,65 +1,69 @@
-#Header{
+@font-face {
+    font-family: 'daydreamthin';
+    src: url('res/daydream-webfont.woff2') format('woff2'),
+         url('res/daydream-webfont.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header, #content, #sidebar, #footer {
+    box-shadow: 10px 10px rgb(50, 33, 55); 
+    background-color: rgb(109, 146, 150);
+}
+
+H1 {
+    font-family: 'daydreamthin';
+    font-size: 28px;
+}
+
+#header{
     background-color: rgb(109, 146, 150);
     margin:auto;
-    width: 620px;
-    height: 130px;
-
-    box-shadow: 40px 40px rgb(126, 74, 141);
-
+    margin-top: 40px;
+    width: 640px;
+    box-shadow: 10px 10px rgb(50, 33, 55);
 }
 
-#Core{
+#core {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+}
+
+#content{
     background-color: rgb(109, 146, 150);
-    
-    width: 620px;
+    width: 480px;
     height: 400px;
+}
+
+#sidebar {
+    width: 140px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+#footer {
+    width: 640px;
     margin: auto;
     margin-top: 40px;
-    box-shadow: 40px 40px rgb(126, 74, 141);
-    
-}
-
-#List {
-    
-
-    margin: auto;
-
-    display: flex;
-    justify-content: center;
-}
-
-p {
-    padding: 10px;
 }
 
 ul {
-    padding-left: 0px;
-    display: flex;
     list-style: none;
-
-}
-
-li {
-    margin: 0 50px;
-}
-
-#puzzle{
-    display: block;
     margin: auto;
-    margin-top: 40px
-
+    padding-left: 0px;   
 }
 
-#background{
-    width: 98%;
-    text-align: center;
-    color: white;
-    
-}
+p                   { padding: 10px; }
+a                   { text-decoration: none; }
+a:link, a:visited   { color: rgb(170, 255, 157); }
+a:hover             { color: rgb(85, 195, 110); }
 
 body{
+    text-align: center;
+    color: white;
     width: 98%;
-    background-color: #d8cfb4;
-    background-image: url("tr1.png");
+    background-color: #74726d;
     margin: auto;
 }
