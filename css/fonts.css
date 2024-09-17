@@ -1,0 +1,9 @@
+/* Title Font                                                               */
+/* Daydream - https://www.dafont.com/daydream-3.font                        */
+@font-face {
+    font-family:    'daydreamthin';
+    src:            url('fonts/daydream-webfont.woff2') format('woff2'),
+                    url('fonts/daydream-webfont.woff')  format('woff');
+    font-weight:    normal;
+    font-style:     normal;
+}

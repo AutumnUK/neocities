@@ -6,43 +6,26 @@
     <title>moon</title>
     <link rel="icon" type="image/x-icon" href="/images/kaiba.ico">
     <link rel="stylesheet" href="main.css">
-</head>
-<body>
 
+    <script>
+        function loadHTML(elementId, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data);
+        }
+    </script>
+
+</head>
+<body onload="loadHTML('header', 'generics/header.html'); loadHTML('footer', 'generics/footer.html'); loadHTML('sidebar', 'generics/sidebar.html')">
     
-<div id="header">
-    
-    
-    <h1>Moon's Corner</h1>
-    <p><i>Pwning n00bs since '94!</i></p>
-</div>
+<div id="header"></div>
 
 <div id="core">
-    
-    <div id="sidebar">
-        <img src="images/puzzle.png" id="puzzle">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="gaming.html">Gaming</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="updates.html">Updates</a></li>
-            <li><a href="guestbook.html">Guestbook</a></li>
-
-        </ul>
-    </div>
-
-    <div id="content">  
-        <embed type="text/html" src="content/guestbook_content.html" width=680px; height=490px overflow-y="hidden">  
-    
-
-    </div>
-
-   
+    <div id="sidebar"></div>
+    <div id="content"><embed type="text/html" src="content/guestbook_content.html" width="680" height="100%"></div>  
 </div>
 
-<div id ="footer"><p><i>MOON 2024</i></p></div>
+<div id ="footer"></div>
 
 </body>
 </html>

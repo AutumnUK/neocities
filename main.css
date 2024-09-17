@@ -1,78 +1,71 @@
-@font-face {
-    font-family: 'daydreamthin';
-    src: url('fonts/daydream-webfont.woff2') format('woff2'),
-         url('fonts/daydream-webfont.woff')  format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(css/animatons.css);
+@import url(css/fonts.css);  
 
 #header, #content, #sidebar, #footer {
-    box-shadow: 10px 10px rgb(50, 33, 55); 
-
+    box-shadow:         10px 10px rgba(50, 33, 55,0.8); 
     background-color: rgba(65, 49, 66,0.8);
-}
-
-H1 {
-    font-family: 'daydreamthin';
-    font-size: 24px;
 }
 
 #header{
     background-color: rgba(65, 49, 66,0.8);
-    margin:auto;
-    margin-top: 40px;
-    padding-top:6px;
-    padding-bottom: 6px;
-    width: 640px;
-    box-shadow: 10px 10px rgb(50, 33, 55);
+    margin:             auto;
+    margin-top:         40px;
+    padding-bottom:     6px;
+    width:              800px;
+    height:             80px;
+}
+
+#header h1 { 
+    font-family:        'daydreamthin'; 
+    text-shadow:        4px 4px #9a71cbb0;
+    padding-top:        6px;
+    margin-bottom:      0px; 
+}
+
+#header p {  
+    text-shadow:        2px 2px #9a71cbb0;
+    margin-top:         0px;
+    padding-top:        8px;
 }
 
 #core {
-    width: 640px;
-    height: 340px;
-    margin: auto;
-    display: flex;
-    margin-top: 40px;
-    
+    width:              800px;
+    height:             500px;
+    margin:             auto;
+    display:            flex;
+    margin-top:         60px;
 }
 
 #content{
-    background-color: rgba(65, 49, 66,0.8);
-    width: 480px;
+    width:              680px;
+    height:             100%;
 }
 
 #sidebar {
-    width: 110px;
-    margin-right: 50px;
+    width:              100px;
+    margin-right:       20px;
 }
 
 #footer {
-    width: 640px;
-    margin: auto;
-    margin-top: 40px;
+    width:              800px;
+    margin:             auto;
+    margin-top:         60px;
+}
+#footer a{
+    margin-left:        20px;
+    margin-right:       20px;
 }
 
 ul {
-    list-style: none;
-    margin: auto;
-    padding-left: 30px;   
-    text-align: justify;
+    list-style:         none;
+    padding-left:       0px;   
+    text-align:         center;
 }
 
-p                   { padding: 10px; }
+p                   { padding: 20px; }
 a                   { text-decoration: none; }
 a:link, a:visited   { color: rgb(170, 255, 157); }
 a:hover             { color: rgb(85, 195, 110); }
-
-@keyframes scrollBackground {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 0 256px;
-    }
-}
-
 
 body {
     text-align: center;
@@ -89,16 +82,12 @@ body {
     background-repeat: repeat; /* Tile the image */
     
     /* Animate the background */
-    animation: scrollBackground 10s linear infinite;
+    animation: scrollBackground 3s linear infinite;
     overflow: hidden;
 }
-
-
 
 #puzzle {
     width: 60px; 
     padding-top: 10px;
     padding-bottom: 10px;
-
-
 }
