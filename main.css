@@ -92,3 +92,18 @@ body {
     animation: scrollBackground 10s linear infinite;
 }
 
+#guestbook {
+    color: white;
+    width: 640px;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(65, 49, 66,0.8);
+    box-shadow: 10px 10px rgb(50, 33, 55);
+}
+
+#puzzle {
+    width: 60px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
