@@ -8,7 +8,8 @@
 
 #header, #content, #sidebar, #footer {
     box-shadow: 10px 10px rgb(50, 33, 55); 
-    background-color: rgb(65, 49, 66);
+
+    background-color: rgba(65, 49, 66,0.8);
 }
 
 H1 {
@@ -17,7 +18,7 @@ H1 {
 }
 
 #header{
-    background-color: rgb(65, 49, 66);
+    background-color: rgba(65, 49, 66,0.8);
     margin:auto;
     margin-top: 40px;
     padding-top:6px;
@@ -36,7 +37,7 @@ H1 {
 }
 
 #content{
-    background-color: rgb(65, 49, 66);
+    background-color: rgba(65, 49, 66,0.8);
     width: 480px;
 }
 
@@ -63,14 +64,31 @@ a                   { text-decoration: none; }
 a:link, a:visited   { color: rgb(170, 255, 157); }
 a:hover             { color: rgb(85, 195, 110); }
 
-body{
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 256px;
+    }
+}
+
+
+body {
     text-align: center;
     color: white;
-    width: 98%;
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
     background-color: #74726d;
     margin: auto;
-    background-image: url(images/tr1.png);
+    background-image: url(images/bak2.jpeg);
     
+    /* Ensure the background image scrolls and tiles */
+    background-attachment: fixed;
+    background-size: auto; /* Remove scaling, tile the image */
+    background-repeat: repeat; /* Tile the image */
     
+    /* Animate the background */
+    animation: scrollBackground 10s linear infinite;
 }
+
